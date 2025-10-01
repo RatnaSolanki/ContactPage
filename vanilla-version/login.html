@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="global.css">
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="firebase.js"></script>
+</head>
+<body>
+  <div class="bg-animate"></div>
+  <div class="container">
+    <div class="card login-card">
+      <div class="emoji">🔑</div>
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p class="switch-link">Don't have an account? <a href="index.html">Sign Up</a></p>
+      <div id="loginMsg" class="info-msg"></div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

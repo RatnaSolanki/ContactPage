@@ -1,0 +1,308 @@
+/* 
+    GENERAL STYLES
+ */
+body, html, #root {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #18181B 0%, #232334 100%);
+  color: #ECECF1;
+}
+
+/*
+    NAVBAR STYLES
+ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: #232334;
+  color: #ECECF1;
+  border-bottom: 1.5px solid #26263B;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  padding: 8px 18px;
+  background: linear-gradient(90deg, #6366F1 60%, #3B82F6 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1em;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(90deg, #818CF8 60%, #2563EB 100%);
+  transform: scale(1.05);
+}
+
+/* 
+    CONTACT CARD STYLES 
+*/
+.contact-card {
+  max-width: 600px;
+  margin: 25px auto; 
+  padding: 32px 26px;
+  background: #24242A;
+  border-radius: 22px;
+  box-shadow: 0 10px 38px rgba(0, 0, 0, 0.25);
+}
+
+/* 
+    FORM STYLES (Contact Form)
+ */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-textarea {
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #373741;
+  background: #2F2F36;
+  color: #ECECF1;
+  font-size: 1.09rem;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-textarea:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+}
+
+.send-btn {
+  padding: 12px;
+  background: linear-gradient(90deg, #6366F1 60%, #3B82F6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.08rem;
+  cursor: pointer;
+  margin-bottom: 7px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.send-btn:hover {
+  background: linear-gradient(90deg, #818CF8 60%, #2563EB 100%);
+  transform: scale(1.03);
+}
+
+/* 
+    MESSAGES LIST STYLES
+ */
+.messages-list {
+  margin-top: 24px;
+  max-height: 330px;
+  overflow-y: auto;
+  background: #222229;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.13);
+  padding: 14px 11px;
+}
+
+.messages-list h3 {
+  margin: 0 0 9px 0;
+  font-size: 1.1em;
+  color: #D1D5DB;
+  border-bottom: 1px solid #373741;
+  padding-bottom: 6px;
+}
+
+.no-messages {
+  color: #A1A1AA;
+  font-style: italic;
+  padding: 10px;
+}
+
+.messages-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message-item {
+  padding: 12px;
+  border-bottom: 1px solid #2D2D39;
+  background: #282832;
+  border-radius: 9px;
+  margin-bottom: 10px;
+  transition: background 0.18s, transform 0.1s;
+}
+
+.message-item:hover {
+  background: #31313C;
+  transform: translateY(-1px);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 0.95em;
+}
+
+.message-header strong {
+  color: #8b8bf8;
+  font-weight: 600;
+}
+
+.message-header small {
+  color: #A1A1AA;
+  font-size: 0.85em;
+}
+
+.message-text {
+  margin: 0;
+  color: #ECECF1;
+  font-size: 1.05em;
+  word-break: break-word;
+}
+
+
+/* 
+    AUTH FORM STYLES (NEW)
+*/
+.auth-bg {
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  background: #24242A;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.emoji {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.auth-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #ECECF1;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.auth-input {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #373741;
+  background: #2F2F36;
+  color: #ECECF1;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-input:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.4);
+}
+
+.auth-btn {
+  padding: 12px;
+  background: linear-gradient(90deg, #6366F1 60%, #3B82F6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.auth-btn:hover {
+  background: linear-gradient(90deg, #818CF8 60%, #2563EB 100%);
+  transform: scale(1.01);
+}
+
+.auth-switch {
+  font-size: 0.95em;
+  color: #A1A1AA;
+}
+
+.auth-link {
+  color: #6366F1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.auth-link:hover {
+  color: #818CF8;
+  text-decoration: underline;
+}
+
+.auth-msg {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #2F2F36;
+  color: #8b8bf8; 
+  font-size: 0.9em;
+}
+
+/* 
+    RESPONSIVE DESIGN
+ */
+@media (max-width: 600px) {
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* CONTACT CARD */
+  .contact-card {
+    padding: 20px;
+    margin: 20px; 
+  }
+
+  /* AUTH CARD */
+  .auth-card {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+}

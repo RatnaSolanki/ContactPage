@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="global.css">
+  <script type="module" src="firebase.js"></script>
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="card contact-card">
+      <div class="emoji">💬</div>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <textarea id="contactMessage" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <div id="contactMsg" class="info-msg"></div>
+     
+      <button class="btn logout-btn" onclick="logout()">Logout</button>
+      <hr>
+      <div id="messagesList"></div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

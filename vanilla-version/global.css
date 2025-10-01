@@ -1,0 +1,164 @@
+/* Background gradient animation */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  overflow-x: hidden;
+  background: #f7faff;
+}
+
+.bg-animate {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 120vw;
+  height: 120vh;
+  z-index: 0;
+  background: radial-gradient(circle at 25% 20%, #a1c4fd 0%, #c2e9fb 35%, #fbc2eb 100%);
+  opacity: 0.7;
+  animation: moveBg 10s linear infinite alternate;
+}
+
+@keyframes moveBg {
+  0% { filter: blur(0px); }
+  100% { filter: blur(10px); }
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(60, 60, 120, 0.14), 0 1.5px 8px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  min-width: 330px;
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  animation: slideInCard 0.7s cubic-bezier(.33,1.41,.5,1.02);
+}
+
+@keyframes slideInCard {
+  0% { transform: translateY(-30px) scale(0.96); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.emoji {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+  animation: popEmoji 1.2s cubic-bezier(.82,.21,.49,1.54) infinite alternate;
+}
+
+@keyframes popEmoji {
+  0% { transform: scale(1);}
+  100% { transform: scale(1.12);}
+}
+
+.card h2 {
+  margin-bottom: 1.4rem;
+  color: #4a4e69;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.82rem;
+  border-radius: 10px;
+  border: 1.5px solid #e6e6ea;
+  background: #f1f4fb;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border-color 0.18s, background 0.16s;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #8faaff;
+  background: #eaf0ff;
+}
+
+textarea {
+  min-height: 80px;
+  max-height: 160px;
+  resize: vertical;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.95rem 0;
+  color: #fff;
+  background: linear-gradient(90deg, #7a9cf8 60%, #9fa8da 100%);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(122,156,248,0.13);
+  transition: background 0.18s, transform 0.13s, box-shadow 0.15s;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover, .btn:focus {
+  background: linear-gradient(90deg, #4a4e69 60%, #7a9cf8 100%);
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(122,156,248,0.18);
+}
+
+.logout-btn {
+  background: linear-gradient(90deg, #f67280 60%, #ffb7b2 100%);
+  margin-top: 0.8rem;
+}
+
+.switch-link {
+  margin-top: 1rem;
+  color: #7a7a7a;
+  font-size: 0.97em;
+}
+
+.switch-link a {
+  color: #7a9cf8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+  color: #4a4e69;
+}
+
+.info-msg {
+  margin-top: 1rem;
+  font-size: 0.98em;
+  color: #f67280;
+  min-height: 1.2em;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .card {
+    padding: 1.2rem 0.6rem 1rem 0.6rem;
+    min-width: 95vw;
+    max-width: 98vw;
+  }
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
