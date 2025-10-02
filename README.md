@@ -3,27 +3,23 @@ This repository contains two versions of a **Contact Page Application** with aut
 One version is built with **Vanilla JavaScript**, and the other with **React + Firebase**.
 
 ## Project Structure
-
-ContactPage/
-├── vanilla-version/ # Vanilla JavaScript version
-│ ├── index.html
-│ ├── script.js
-│ ├── firebase.js
-│ ├── global.css
-│ └── ...
-├── react-version/ # React + Firebase version
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── AuthForm.jsx
-│ │ │ ├── ContactForm.jsx
-│ │ ├── firebase.js
-│ │ ├── App.jsx
-│ │ ├── main.jsx
-│ │ ├── global.css
-│ ├── package.json
-│ └── ...
-├── README.md
+Contact-Page/
+│
+├── vanilla-version/          # Plain HTML, CSS, JS version
+│   ├── index.html
+│   ├── style.css
+│   └── contact-script.js
+│
+├── react-version/            # React implementation
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AuthForm.jsx
+│   │   │   └── ContactForm.jsx
+│   │   ├── App.jsx
+│   │   ├── firebase.js
+│   │   └── index.js
+│   ├── global.css
+│   └── package.json
 
 
 ## Features
