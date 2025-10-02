@@ -2,25 +2,6 @@
 This repository contains two versions of a **Contact Page Application** with authentication and messaging functionality.  
 One version is built with **Vanilla JavaScript**, and the other with **React + Firebase**.
 
-## Project Structure
-Contact-Page/
-│
-├── vanilla-version/          # Plain HTML, CSS, JS version
-│   ├── index.html
-│   ├── style.css
-│   └── contact-script.js
-│
-├── react-version/            # React implementation
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── AuthForm.jsx
-│   │   │   └── ContactForm.jsx
-│   │   ├── App.jsx
-│   │   ├── firebase.js
-│   │   └── index.js
-│   ├── global.css
-│   └── package.json
-
 
 ## Features
 Both versions have:
